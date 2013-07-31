@@ -1,0 +1,60 @@
+<img class="titleLogo" src="http://www.vectortemplates.com/raster/batman-logo-big.gif"/>
+<div class="slides">
+</div>
+<ol class="slideList">
+  <li class="heading">
+    <div class="runScript">
+      var self = this;
+      this.removeLast( function() {
+        $('img').animate({left: '45%'}, function() {
+          if(!self.isShowing) {
+            self.showSlide();
+          }  
+        })
+      })
+    </div>
+    <h1> Title </h1>
+  </li>
+  <li class="slide slide1">
+    <div class="runScript">
+      var self = this;
+      self.removeLast( function() {
+        $('img').animate({left: 20}, function(){
+           if (!self.isShowing) {
+             self.showSlide();
+           }
+        })
+      });
+    </div>
+    <h1 class='title1'> Title </h1>
+    <p> Stuff, stuff </p>
+  </li>
+  <li class="slide slide2">
+    <div class="runScript">
+      var self = this
+      if($('.slides .title1').length <= 0) {
+        self.removeLast(function() {
+          $('.slides').append($('.title1')[0].outerHTML)
+          self.showSlide();
+        });
+      }
+      else {
+        $('.slides p').hide('size', 1000, function() {
+          this.remove()
+          self.showSlide();
+        })
+        
+      }
+    </div>
+    <p> Test 2 </p>
+  </li>
+  <li class="slide slide3">
+    <div class="runScript">
+      var self = this
+      this.removeLast( function() {
+        self.showSlide();
+      });
+    </div>
+    <h1> New Title </h1> 
+  </li>
+</ol>
