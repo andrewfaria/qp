@@ -1,0 +1,23 @@
+.titleLogo{
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  height: 30%;
+}
+.slideList, .runScript{ 
+  display: none;
+}
+.slides{
+  position: absolute;
+  display: none;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  top: 40%;
+}
+.slide {
+  width: 90%;
+  text-align: right;
+  top: 10%;
+}
